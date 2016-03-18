@@ -1,11 +1,19 @@
 {
   "name": "react-webpack-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple React Template with Webpack",
   "scripts": {
     "start": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Eddie Kao",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
