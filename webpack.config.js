@@ -5,21 +5,21 @@ module.exports = {
 
   output: {
     path: __dirname,
-    filename: "bundle.js"
+    filename: "build/bundle.js"
   },
 
   devServer: {
     inline: true,
-    port: 3333
+    port: 8230
   },
 
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['es2015', 'react']
+        presets: ['react', 'es2015']
       }
     }]
   }
