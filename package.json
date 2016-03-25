@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple React Template with Webpack",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress",
+    "start": "node_modules/.bin/webpack-dev-server --progress"
   },
   "author": "Eddie Kao",
   "license": "MIT",
