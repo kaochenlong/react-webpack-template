@@ -1,11 +1,17 @@
+const path = require('path');
+const PATHS = {
+  app: path.join(__dirname, 'source/app/app.js'),
+  build: path.join(__dirname, 'build')
+};
+
 module.exports = {
-  entry: [
-    './source/app/app.js'
-  ],
+  entry: {
+    bundle: PATHS.app,
+  },
 
   output: {
-    path: __dirname,
-    filename: "build/bundle.js"
+    path: PATHS.build,
+    filename: "[name].js"
   },
 
   devServer: {
@@ -25,3 +31,4 @@ module.exports = {
     }]
   }
 };
+
