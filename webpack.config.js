@@ -14,6 +14,10 @@ module.exports = {
     filename: "[name].js"
   },
 
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+
   devServer: {
     inline: true,
     port: 8230,
